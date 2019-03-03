@@ -1,0 +1,35 @@
+/*this is the weather summary block*/
+#city {
+  color: #c25a43;
+  font-size: 20px;
+  display: inline-block;
+}
+
+
+#farenheit{
+  color: #c25a43;
+  font-size: 20px;
+  display: inline-block;
+}
+
+#celsius{
+  color:#c25a43;
+  font-size: 20px;
+  display: inline-block;
+}
+
+#description{
+  color: #c25a43;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.weatherSummary {
+  font-size: 20px;
+  float: left;
+}
+
+.detailedWeatherButton {
+  cursor: pointer;
+  color: #c25a43;
+}

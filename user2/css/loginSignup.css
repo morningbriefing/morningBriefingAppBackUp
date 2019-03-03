@@ -1,0 +1,99 @@
+
+
+.wrapper {
+  margin: 0 auto;
+  width: 400px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.section {
+  padding: 1rem;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+}
+.header__text {
+  position: relative;
+  padding: 3.5rem 0 7rem;
+}
+.header__text > h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+.header > .rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-position: top center;
+  background:#43c29e;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 17rem;
+  overflow: auto;
+}
+form > * + * {
+  margin-top: 1rem;
+}
+form > input {
+  border: 0;
+  border-bottom: 1px solid #43c29e;
+  border-radius: 0;
+  width: 100%;
+  height: 2rem;
+  padding: 0 0 0.25rem 0;
+  font-size: 1rem;
+  color: #43c29e;
+  background: #fefefe;
+}
+form > input:focus {
+  outline: none;
+}
+form > input::placeholder {
+  color: #43c29e;
+}
+form > button {
+  margin-top: 2rem;
+  border: 0;
+  border-radius: 200px;
+  width: 100%;
+  padding: 0.85rem;
+  font-size: 1rem;
+  color: #fefefe;
+  background: #43c29e;
+}
+
+form > button:hover {
+  background-color: #c25a43;
+}
+
+}
+form > button:focus {
+  outline: none;
+}
+form > p {
+  margin: 0.25rem 0 0;
+  text-align: center;
+  color: #43c29e;
+}
+
+form > p:hover {
+  color: #c25a43;
+}
+
+/* .sign-up {
+  display: none;
+} */
+
+.opposite-btn1,
+.opposite-btn2 {
+  cursor: pointer;
+  color: #c25a43;
+  text-align: center;
+}

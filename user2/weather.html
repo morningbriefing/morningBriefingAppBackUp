@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--"back color: #43c29e"-->
+<!--tetradic color:#c25a43, #c29a43, #6f43c2-->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Morning Briefing Weather</title>
+  <link rel="stylesheet" href="css/weather.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+  <header class="section header">
+  <div class="rectangle"></div>
+  <!-- <div class="w3-bar" id = "navbar"> -->
+    <div class="w3-dropdown-hover" id="dropdown">
+      <button class="w3-button" id = "navbar"><i class="fa fa-bars"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="home.html" class="w3-bar-item w3-button">Home</a>
+        <a href="weather.html" class="w3-bar-item w3-button">Weather</a>
+        <a href="twitter.html" class="w3-bar-item w3-button">Twitter</a>
+        <a href="usageReport.html" class="w3-bar-item w3-button">Usage Report</a>
+        <a href="userProfile.html" class="w3-bar-item w3-button">My Account</a>
+        <a href="signup.html" class="w3-bar-item w3-button">Signup</a>
+        <a href="login.html" class="w3-bar-item w3-button">Login</a>
+      </div>
+    </div>
+  <div class="header__text">
+    <h1 id="city"></h1>
+    <div id="farenheit" class="temp-info"></div>
+    <div id="celsius" class="temp-info"></div>
+
+</div>
+</header>
+<div class="information" >
+
+<div class="detailed-weather">
+  <div id="graphic" class="weather-icon"></div>
+  <div id="description" class='important-info text'></div>
+</div>
+
+<div class="description-container">
+  <div class="block-1">
+    <div class="text">
+      <span>Max</span>
+      <span id="max" class="important-info"> </span>
+    </div>
+    <div class="text">
+      <span>Min</span>
+    <span id="min" class='important-info'> </span>
+    </div>
+
+  </div>
+  <div class="block-2">
+    <div id="longitude" class=" text important-info">Lon: </div>
+    <div id="latitude" class="text important-info">Lat: </div>
+  </div>
+  <div class="block-3">
+    <div id="humidity" class="text important-info">Humidity: </div>
+    <div id="pressure" class="text important-info">Pressure: </div>
+    <div id="windSpeed" class="text important-info">Winds: </div>
+  </div>
+</div>
+
+<div class="container-button">
+      <div class="switch-button">
+        <span class="active"></span>
+        <!-- <button class="text switch-button-case left active-case">Celsius</button>
+        <button class="text switch-button-case right">Farenheit</button> -->
+
+        <button class="text switch-button-case left">Celsius</button>
+        <button class="text switch-button-case right active-case">Farenheit</button>
+      </div>
+</div>
+</div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+
+    <script  src="js/weather.js"></script>
+</body>
+
+</html>
