@@ -70,6 +70,7 @@ body {
   height: 40%;
   background-position: top-left;
   background-color: #42c29e;
+  margin: 2%;
 }
 #navbar{
   position: absolute;
@@ -80,5 +81,7 @@ body {
   height: 30%;
   margin-bottom: 2px;
   background-position: top-left;
-  background-color: #42c29e;
+  background-color: black;
+  /* background-color: #42c29e; */
+  color: white
 }

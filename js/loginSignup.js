@@ -36,8 +36,22 @@
 //         location.href = "www.yoursite.com";
 // }
 //
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
 function RedirectHome() {
-    window.location.href = "./home.html";
+    var emailForm = document.getElementById("emailForm");
+    if (validateEmail(emailForm.value))
+      {
+        window.location.href = "./home.html";
+      }
+    else
+    {
+      emailForm.value = "";
+      emailForm.placeholder = "Invalid Email Address";
+    }
 }
 
 function RedirectSignin() {
