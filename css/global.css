@@ -81,7 +81,6 @@ body {
   height: 30%;
   margin-bottom: 2px;
   background-position: top-left;
-  background-color: black;
-  /* background-color: #42c29e; */
+  background-color: #42c29e;
   color: white
 }

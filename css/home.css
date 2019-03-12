@@ -1,26 +1,26 @@
 /*this is the weather summary block*/
 #city {
   color: #c25a43;
-  font-size: 20px;
+  font-size: 18px;
   display: inline-block;
 }
 
 
 #farenheit{
   color: #c25a43;
-  font-size: 20px;
+  font-size: 18px;
   display: inline-block;
 }
 
 #celsius{
   color:#c25a43;
-  font-size: 20px;
+  font-size: 18px;
   display: inline-block;
 }
 
 #description{
   color: #c25a43;
-  font-size: 20px;
+  font-size: 18px;
   display: inline-block;
 }
 
@@ -32,4 +32,97 @@
 .detailedWeatherButton {
   cursor: pointer;
   color: #c25a43;
+}
+
+/*this block contains task list*/
+
+#ToDoInput {
+  padding-left: 5%;
+}
+
+ul{
+  padding: 0;
+  width: 85%;
+  list-style-type: none;
+}
+
+ul li{
+  cursor: pointer;
+  position: relative;
+  padding: 6px 6px 6px 20px;
+  background: #eee;
+  font-size: 14px;
+  transition: 0.2s;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user=select: none;
+  user-select: none;
+}
+
+ul li:nth-child(odd){
+  background: #f9f9f9;
+}
+
+ul li:hover {
+  background: #ddd;
+}
+
+ul li.checked{
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 8px;
+  left: 12px;
+  transform: rotate(45deg);
+  height: 10px;
+  width: 5px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 6px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.header{
+  background-color: white;
+  padding: 10px 15px;
+  color: white;
+  text-align: center;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.addBtn {
+  padding: 5px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.addBtn:hover{
+  background-color: #bbb;
 }

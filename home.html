@@ -41,26 +41,31 @@
             <h3>Hello Jane Doe</h3>
             <p>Home</p>
           </div>
-    </a>
         </header>
 
-    <div class="information">
-      <p>under construction. Please don't grade this page.</p>
-
-      <!--  this is the weather summary block  -->
+  <div class="information">
+    <!--  this is the weather summary block  -->
     <div class="weatherSummary">
       <div id="city"></div>
       <div id="farenheit" class="temp-info"></div>
       <!-- <div id="celsius" class="temp-info"></div> -->
-      <div id="description" class='important-info text'></div>
-      <p class="detailedWeatherButton" onclick="RedirectWeather()">More weather information</p>
-  </div>
+    </div>
+    <br>
 
+    <!-- This block contains the To Do list-->
+    <div id="ToDoList" class="ToDo">
+      <h4>My To-Do's</h4>
+      <input type="text" id="ToDoInput" placeholder="Type Text here...">
+      <span onclick="newElement()" class="addBtn">Add Task</span>
     </div>
 
-
-
+    <ul id="myToDos">
+      <li>Make coffee</li>
+      <li>2PM Staff Meeting</li>
+    </ul>
   </div>
+
+</div>
 
 
 
