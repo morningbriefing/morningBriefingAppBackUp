@@ -24,8 +24,22 @@ console.log(data);
     lat = data.latitude;
     lon = data.longitude;
 
-    $("#latitude").append(lat);
-    $("#longitude").append(lon);
+    var nlat = lat.toString();
+    var nlon = lon.toString();
+    if (lat > 0)
+    {
+      nlat = '+' + nlat;
+    }
+    if (lon > 0)
+    {
+      nlon = '+' + nlon;
+    }
+
+    nlat = nlat.substring(0, 6);
+    nlon = nlon.substring(0, 6);
+
+    $("#latitude").append(nlat);
+    $("#longitude").append(nlon);
 
     $.getJSON("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=059dcee9c15c93a942eb1f38b72876be", function(weatherData) {
       $.each(weatherData, function(j, b) {});
@@ -39,7 +53,12 @@ console.log(data);
 
       $('#description').append(weatherData.weather[0].description);
       $('#city').append(weatherData.name);
-      $("#windSpeed").append(weatherData.wind.speed + "km/h");
+
+      kph = weatherData.wind.speed.toFixed(1);
+      // convert km/h to mph
+      mph = Math.floor(kph * 1.61);
+      $("#windSpeed").append(mph + " mi/h");
+
       $("#pressure").append(weatherData.main.pressure + "º");
       $("#humidity").append(weatherData.main.humidity + "%");
       minF = Math.floor(weatherData.main.temp_min * 9/5 - 459.67);
@@ -85,6 +104,8 @@ function switchLeft() {
   $('#celsius').append(celsius + 'ºC');
   $("#min").append(minCelsius + 'ºC');
   $("#max").append(maxCelsius + 'ºC');
+  $('#windSpeed').empty();
+  $('#windSpeed').append(kph + " km/h");
 }
 
 function switchRight() {
@@ -98,6 +119,8 @@ function switchRight() {
   $('#farenheit').append(farenheit + 'ºF');
   $('#min').append(minF + "ºF");
   $('#max').append(maxF  + "ºF");
+  $('#windSpeed').empty();
+  $('#windSpeed').append(mph + " mi/h");
 
 }
 
