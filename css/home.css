@@ -126,3 +126,27 @@ ul li.checked::before {
 .addBtn:hover{
   background-color: #bbb;
 }
+
+#myToDos{
+  margin-left:25px;
+}
+
+#ToDoList{
+  margin-left:25px;
+}
+
+h4{
+  padding-left:100px;
+}
+
+.weatherSummary{
+  padding-left:110px;
+}
+
+#city:hover{
+  background-color: #ddd;
+}
+
+#farenheit:hover{
+  background-color: #ddd;
+}

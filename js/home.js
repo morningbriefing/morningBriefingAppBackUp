@@ -58,3 +58,7 @@ function newElement() {
     }
   }
 }
+
+function RedirectWeather() {
+    window.location.href = "./weather.html";
+}
